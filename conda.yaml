@@ -1,0 +1,4 @@
+name: edmachina-ml-challenge
+dependencies:
+- python=3.10
+- pip
