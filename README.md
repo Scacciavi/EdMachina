@@ -1,5 +1,6 @@
 # EdMachina Machine Learning Challenge
 
+
 ## Description
 This repository contains the solution for the EdMachina Machine Learning Challenge. The challenge consists of predicting the final grade of studens in a course based on the data provided in the `data` folder.
 The focus was to create a pipeline for data preparation, model training, evaluation, and model deployment.
@@ -71,4 +72,4 @@ The main tools used in this project are:
     docker-compose up
 ```
 
-INCOMPLETO!
+![Alt text](resources/imgs/AssetsDefinition.png)
