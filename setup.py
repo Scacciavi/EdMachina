@@ -11,8 +11,11 @@ setuptools.setup(
     install_requires=[
         f"dagster=={DAGSTER_VERSION}",
         f"dagster-webserver=={DAGSTER_VERSION}",
-        f" mlflow=={MLFLOW_VERSION}",
-        "pandas==2.2.2"
+        f"mlflow=={MLFLOW_VERSION}",
+        f"dagster-mlflow=={DAGSTER_LIBS_VERSION}",
+        "pandas==2.2.2",
+        "scikit-learn",
+        "matplotlib==3.4.2",
     ],
     extras_require={"dev": [
         f"dagster-webserver=={DAGSTER_VERSION}",
