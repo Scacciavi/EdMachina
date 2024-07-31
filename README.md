@@ -71,5 +71,12 @@ The main tools used in this project are:
 ```sh
     docker-compose up
 ```
+## Demo
 
-![Alt text](resources/imgs/AssetsDefinition.png)
+![Shows the pipeline definition in the dagster UI](resources/imgs/AssetsDefinition.png)
+
+![Shows the asset status](resources/imgs/AssetStatus.png)
+
+![Shows the model registry in mlflow](resources/imgs/ModelRegistry.png)
+
+![Shows the models comparison in mlflow](resources/imgs/ModelPerformance.png)
