@@ -79,4 +79,4 @@ The main tools used in this project are:
 
 ![Shows the model registry in mlflow](resources/imgs/ModelRegistry.png)
 
-![Shows the models comparison in mlflow](resources/imgs/ModelPerformance.png)
+![Shows the models comparison in mlflow](resources/imgs/ModelCompare.png)
