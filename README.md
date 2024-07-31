@@ -18,6 +18,11 @@ The main tools used in this project are:
     - It allows us to track experiments, log parameters, and metrics, and store artifacts like models and datasets.
     - It provides a way to compare different models and versions of the same model.
     - It provides a way to deploy models in different environments (not the main option propose but a solid alternative for k8s deployment).
+- Nvidia Triton Inference Server for model deployment
+    - Triton Inference Server is an open-source inference serving software that lets teams deploy trained AI models from any framework (TensorFlow, PyTorch, ONNX, or a custom framework) from local storage, Google Cloud AI Platform, AWS SageMaker, Azure ML, or NVIDIA GPU Cloud (NGC) to any GPU- or CPU-based infrastructure.
+    - It provides a way to deploy models in a scalable way, allowing us to serve multiple models in the same server.
+    - It provides a way to monitor the models' performance and health.
+    - It provides a way to update models without downtime.
 
 
 ## Roadmap
