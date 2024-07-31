@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-grade-predictor
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow-grade-predictor
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: mlflow-grade-predictor
+    spec:
+      containers:
+      - args:
+        - mlflow models serve -m models:/brand-classification-nb/42 --host 0.0.0.0
+          --port 5000 --env-manager=local
+        command:
+        - /bin/bash
+        - -c
+        image: <IMAGE_NAME>
+        imagePullPolicy: Always
+        name: mlflow-brand-prediction
+        ports:
+        - containerPort: 5000
+        resources:
+          limits:
+            cpu: '1'
+            memory: 4000Mi
+            nvidia.com/gpu: "0"
+          requests:
+            cpu: '0.1'
+            memory: 2000Mi
+            nvidia.com/gpu: "0"
