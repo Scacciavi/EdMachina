@@ -45,7 +45,7 @@ The main tools used in this project are:
 ```
 2. configure the environment variables
 ```sh
-    cp environments/dev.env.sample environments/dev.env
+    DAGSTER_HOME=$(pwd)/dagster_repo/storage
 ```
 2. Install dependencies
 ```sh
@@ -55,6 +55,10 @@ The main tools used in this project are:
 4. Run dagster for pipelines orchestration
 ```sh
     dagster dev
+```
+5.Run mlflow ui for model tracking
+```sh
+    mlflow ui --port 8080 --backend-store-uri sqlite:///mlruns.db
 ```
 
 ## Run the app
@@ -66,3 +70,5 @@ The main tools used in this project are:
 ```sh
     docker-compose up
 ```
+
+INCOMPLETO!
